@@ -10,16 +10,13 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 a{
     text-decoration: none;
 }
-
 ul{
     list-style-type: none;
     padding-left: 0;
 }
-
 #fundo_email{
     display:none;
 }

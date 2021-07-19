@@ -2,7 +2,6 @@ let section, img;
 section=document.getElementById("email");
 img=new Image();
 img.src=document.getElementById("fundo_email").src;
-console.log(document.getElementById("fundo_email").clientHeight);
 section.style.height=`${3*(img.height)}px`;
 //rep();
 //window.onresize = rep(); 
