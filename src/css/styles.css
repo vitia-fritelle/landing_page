@@ -19,3 +19,7 @@ ul{
     list-style-type: none;
     padding-left: 0;
 }
+
+#fundo_email{
+    display:none;
+}
