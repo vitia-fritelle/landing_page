@@ -6,7 +6,24 @@
     justify-content: center;
     align-items: center;
 }
-#apresentacao img{
-    height:300px;
-    width:300px;
+.black-friday{
+    height:auto;
+    width:33%;
+    transition: 0.5s;
+}
+.black-friday:hover{
+    width:35%;
+}
+
+@media  (mad-width:300px){
+
+    #apresentacao{
+        height:10%;
+        width:100%;
+    }
+
+    .black-friday{
+        height:100%;
+        width:auto;
+    }
 }

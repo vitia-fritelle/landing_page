@@ -8,13 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/assets/images/elements/favicon/site.ico">
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/apresentacao.css">
     <link rel="stylesheet" href="./src/css/descricao.css">
     <link rel="stylesheet" href="./src/css/depoimentos.css">
+    <link rel="stylesheet" href="./src/css/email.css">
+    <link rel="stylesheet" href="./src/css/pokemon.css">
     <link rel="stylesheet" href="./src/css/parceiros.css">
-    <script></script>
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <audio class="bisharp" preload="auto">
+        <source src="./src/assets/audios/elements/pokemon/bisharp.ogg"></source>
+    </audio>
+    <audio class="pelipper" preload="auto">
+        <source src="./src/assets/audios/elements/pokemon/pelipper.ogg"></source>
+    </audio>
+    <audio class="swampert" preload="auto">
+        <source src="./src/assets/audios/elements/pokemon/swampert.ogg"></source>
+    </audio>
+    <source id="fundo_email" src="./src/assets/images/background/fundo_email.gif">    
 </head>
 <body>
     <header>
@@ -56,32 +69,38 @@
                 </div>
         </div>
         <nav>
-                <a href="#motivacao">Motivação</a>
+                <a href="#descricao">Motivação</a>
                 <a href="#depoimentos">Depoimentos</a>
                 <a href="#email">E-mail</a>
                 <a href="#pokemon">Pokémon</a>
                 <a href="#parceiros">Parceiros</a>
         </nav>
     </header>
-    <section id="apresentacao">
-        <img src="./src/assets/images/logo/logo.jpeg" alt="Black Friday Pokémon">
-    </section>
-    <section id="descricao">
+    <div id="apresentacao">
+        <img class="black-friday" src="./src/assets/images/logo/logo.jpeg" alt="Black Friday Pokémon">
+    </div>
+    <div id="descricao">
         <div class="descricao_text1"><p>Não consegue derrotar o líder de ginásio?</p></div>
         <div class="descricao_text2"><p>Quer vencer a liga Pokémon?</p></div>
         <div class="descricao_text3"><p>Não quer mais ser chamado de <strong>noobão</strong>?</p></div>
         <div class="descricao_text4"><p>Temos a solução para você!</p></div>
         <div class="descricao_text5"><p>A elite dos 4 tem os pokémons com os melhores <abbr title="individual values" lang="en">IVs</abbr> para você não passar mais vergonha.</p></div>
         <div class="descricao_text6"><p>Você também pode ser <strong>campeão</strong>!</p></div>
-    </section>
-    <section id="depoimentos">
+    </div>
+    <div id="depoimentos">
         <div class="depoimentos_header">             
             <h1>Depoimentos</h1> 
         </div>
         <div class="depoimentos_block1">
-            <img title="campeão da liga pokémon de Alola" src="./src/assets/images/elements/depoentes/ash.jpeg" alt="Ash Ketchum">
-            <div>
-                <p>Avaliação: 5 estrelas</p>
+            <img class="imagem_depoente" title="campeão da liga pokémon de Alola" src="./src/assets/images/elements/depoentes/ash.jpeg" alt="Ash Ketchum">
+            <div class="avaliacao_comentario">
+                <span class="icone-esquerda" aria-label="A avaliação é equivalente a 5 estrelas">Avaliação:
+                    <img src="./src/assets/images/elements/icones/pikachu.png" alt="ícone de pikachu">
+                    <img src="./src/assets/images/elements/icones/pikachu.png" alt="ícone de pikachu">
+                    <img src="./src/assets/images/elements/icones/pikachu.png" alt="ícone de pikachu">
+                    <img src="./src/assets/images/elements/icones/pikachu.png" alt="ícone de pikachu">
+                    <img src="./src/assets/images/elements/icones/pikachu.png" alt="ícone de pikachu">
+                </span>
                 <blockquote>Foi por um bom motivo que o traço ficou horrível. 
                 20 anos de frustração até que eu vendi o que tinha e o que não tinha e consegui 
                 os pokémons da elite dos 4! Agora sou campeão de uma liga pokémon de peso porque aquele campeonato 
@@ -90,9 +109,15 @@
             </div>
         </div>
         <div class="depoimentos_block2">
-            <img title="campeão da liga pokémon de Hoenn" src="./src/assets/images/elements/depoentes/steven.jpeg" alt="Steven Stone">
-            <div>
-                <p>Avaliação: 5 estrelas</p>
+            <img class="imagem_depoente" title="campeão da liga pokémon de Hoenn" src="./src/assets/images/elements/depoentes/steven.jpeg" alt="Steven Stone">
+            <div class="avaliacao_comentario">
+                <span class="icone-direita" aria-label="A avaliação é equivalente a 5 estrelas">Avaliação:
+                    <img src="./src/assets/images/elements/icones/aron.png" alt="ícone de aron">
+                    <img src="./src/assets/images/elements/icones/aron.png" alt="ícone de aron">
+                    <img src="./src/assets/images/elements/icones/aron.png" alt="ícone de aron">
+                    <img src="./src/assets/images/elements/icones/aron.png" alt="ícone de aron">
+                    <img src="./src/assets/images/elements/icones/aron.png" alt="ícone de aron">
+                </span>
                 <blockquote>Quando o <dfn title="campeão prévio de Hoenn">Wallace</dfn> dropou o título para ir para Sootopolis virar líder de ginásio, 
                     eu não iria perder a oportunidade. Pedi o meu <i>metagross shiny</i> e o sucesso foi tanto que o campeão canônico 
                     da série virei eu.
@@ -100,88 +125,175 @@
             </div>
         </div>
         <div class="depoimentos_block1">
-            <img title="campeão da liga pokémon de Unova" src="./src/assets/images/elements/depoentes/iris.jpeg" alt="Iris">
-            <div>
-                <p>Avaliação: 5 estrelas</p>
+            <img class="imagem_depoente" title="campeão da liga pokémon de Unova" src="./src/assets/images/elements/depoentes/iris.jpeg" alt="Iris">
+            <div class="avaliacao_comentario">
+                <span class="icone-esquerda" aria-label="A avaliação é equivalente a 5 estrelas">Avaliação:
+                    <img src="./src/assets/images/elements/icones/axew.png" alt="ícone de axew">
+                    <img src="./src/assets/images/elements/icones/axew.png" alt="ícone de axew">
+                    <img src="./src/assets/images/elements/icones/axew.png" alt="ícone de axew">
+                    <img src="./src/assets/images/elements/icones/axew.png" alt="ícone de axew">
+                    <img src="./src/assets/images/elements/icones/axew.png" alt="ícone de axew">
+                </span>
                 <blockquote>Quando vi que o Ash ganhou o campeonato, imediatamente pedi os meus e não pude acreditar. 
                     A casa caiu para a <dfn>volcarona</dfn> do <dfn title="campeão prévio de Unova">Alder</dfn>!
                 </blockquote>
             </div>
         </div>
         <div class="depoimentos_block2">
-            <img title="campeão da liga pokémon de Galar" src="./src/assets/images/elements/depoentes/leon.jpeg" alt="Leon">
-            <div>
-                <p>Avaliação: 5 estrelas</p>
+            <img class="imagem_depoente" title="campeão da liga pokémon de Galar" src="./src/assets/images/elements/depoentes/leon.jpeg" alt="Leon">
+            <div class="avaliacao_comentario">
+                <span class="icone-direita" aria-label="A avaliação é equivalente a 5 estrelas">Avaliação:
+                    <img src="./src/assets/images/elements/icones/charmander.png" alt="ícone de charmander">
+                    <img src="./src/assets/images/elements/icones/charmander.png" alt="ícone de charmander">
+                    <img src="./src/assets/images/elements/icones/charmander.png" alt="ícone de charmander">
+                    <img src="./src/assets/images/elements/icones/charmander.png" alt="ícone de charmander">
+                    <img src="./src/assets/images/elements/icones/charmander.png" alt="ícone de charmander">
+                </span>
                 <blockquote>O meu <dfn>charizard</dfn> é da elite dos 4. Não conseguia encontrar um charmander com <abbr title="individual value" lang="en">IV</abbr> bom porque a competição era muito alta.  
                     Agradeço à elite pelos serviços prestados!
                 </blockquote>
             </div>
         </div>
-    </section>
-    <section id="email">
+    </div>
+    <div id="email">
         <h1>Cadastre-se e receba as ofertas primeiro!</h1>
         <div>
-            <input placeholder="Nome"type="text">
-            <input placeholder="email@exemplo.com.br" type="text">
-            <button>CADASTRAR</button>
+            <input id="user_name" placeholder="Nome"type="text">
+            <input id="user_email" placeholder="email@exemplo.com.br" type="text">
+            <button onclick="storage()">CADASTRAR</button>
         </div>
-    </section>
-    <section id="pokemon">
-
-    </section>
-    <section id="parceiros">
+    </div>
+    <div id="pokemon">
+        <img class= "side_images" src="./src/assets/images/background/background-left.jpeg" alt="Ask Ketchum olhando desafiadoramente para Gary Carvalho">
+        <div>
+            <img class="bisharp" src="./src/assets/images/elements/pokemon/bisharp.gif" alt="Bisharp">    
+            <ul>
+                <li>Nome: Bisharp</li>
+                <li>Tipo: Noturno/Metal</li>
+            </ul>
+            <h3>IVs</h3>
+            <ul>
+                <li>HP: 31</li>
+                <li>Attack: 31</li>
+                <li>Defense: 31</li>
+                <li>Sp. Atk: 31</li>
+                <li>Sp. Def: 31</li>
+                <li>Speed: 31</li>
+            </ul>
+            <button>Compre!</button>
+        </div>
+        <div>
+            <img class="swampert" src="./src/assets/images/elements/pokemon/swampert.gif" alt="Swampert">
+            <ul>
+                <li>Nome: Swampert</li>
+                <li>Tipo: Água/Terra</li>
+            </ul>
+            <h3>IVs</h3>
+            <ul>
+                <li>HP: 31</li>
+                <li>Attack: 31</li>
+                <li>Defense: 31</li>
+                <li>Sp. Atk: 31</li>
+                <li>Sp. Def: 31</li>
+                <li>Speed: 0</li>
+            </ul>
+            <button>Compre!</button>
+        </div>
+        <div>
+            <img class="pelipper" src="./src/assets/images/elements/pokemon/pelipper.gif" alt="Pelipper">
+            <ul>
+                <li>Nome: Pelipper</li>
+                <li>Tipo: Água/Voador</li>
+            </ul>
+            <h3>IVs</h3>
+            <ul>
+                <li>HP: 31</li>
+                <li>Attack: 0</li>
+                <li>Defense: 31</li>
+                <li>Sp. Atk: 31</li>
+                <li>Sp. Def: 31</li>
+                <li>Speed: 31</li>
+            </ul>
+            <button>Compre!</button>
+        </div>
+        <div>
+            <img src="./src/assets/images/elements/pokemon/tapu-koko.gif" alt="Tapu Koko">
+            <ul>
+                <li>Nome: Tapu Koko</li>
+                <li>Tipo: Fada/Elétrico</li>
+            </ul>
+            <h3>IVs</h3>
+            <ul>
+                <li>HP: 31</li>
+                <li>Attack: 0</li>
+                <li>Defense: 31</li>
+                <li>Sp. Atk: 31</li>
+                <li>Sp. Def: 31</li>
+                <li>Speed: 31</li>
+            </ul>
+            <button>Compre!</button>
+        </div>
+        <img class= "side_images" src="./src/assets/images/background/background-right.jpeg" alt="Gary Carvalho olhando desafiadoramente para Ash Ketchum">
+    </div>
+    <div id="parceiros">
         <h1>Parceiros</h1>
         <div>
             <div>
-                    <img src="./src/assets/images/elements/equipes/Rocket_icon.png" alt="Equipe Rocket">
-                    <p>Equipe Rocket</p>
+                <img class="emblema" src="./src/assets/images/elements/equipes/Rocket_icon.png" alt="Equipe Rocket">
+                <p>Equipe Rocket</p>
             </div>
             <div>
-
-                    <img src="./src/assets/images/elements/equipes/Aqua_icon.png" alt="Equipe Aqua">
-
-                    <p>Equipe Aqua</p>
-
+                <img class="emblema" src="./src/assets/images/elements/equipes/Aqua_icon.png" alt="Equipe Aqua">
+                <p>Equipe Aqua</p>
             </div>
             <div>
-
-                    <img src="./src/assets/images/elements/equipes/Magma_icon.png" alt="Equipe Magma">
-                </div>
-                <div class="parceiros_text">
-                    <p>Equipe Magma</p>
-                </div>
+                <img class="emblema" src="./src/assets/images/elements/equipes/Magma_icon.png" alt="Equipe Magma">
+                <p>Equipe Magma</p>
             </div>
             <div>
-
-                    <img src="./src/assets/images/elements/equipes/Galactic_icon.png" alt="Equipe Galactic">
-
-                    <p>Equipe Galactic</p>
-
+                <img class="emblema" src="./src/assets/images/elements/equipes/Galactic_icon.png" alt="Equipe Galactic">
+                <p>Equipe Galactic</p>
             </div>
             <div>
-
-                    <img src="./src/assets/images/elements/equipes/Plasma_icon.png" alt="Equipe Plasma">
-
-                    <p>Equipe Plasma</p>
-
+                <img class="emblema" src="./src/assets/images/elements/equipes/Plasma_icon.png" alt="Equipe Plasma">
+                <p>Equipe Plasma</p>
             </div>
             <div>
-
-                    <img src="./src/assets/images/elements/equipes/Flare_icon.png" alt="Equipe Flare">
-
-
-                    <p>Equipe Flare</p>
-
+                <img class="emblema" src="./src/assets/images/elements/equipes/Flare_icon.png" alt="Equipe Flare">
+                <p>Equipe Flare</p>
             </div>
             <div>
-
-                    <img src="./src/assets/images/elements/equipes/Skull_icon.png" alt="Equipe Skull">
-
-                    <p>Equipe Skull</p>
-
+                <img class="emblema" src="./src/assets/images/elements/equipes/Skull_icon.png" alt="Equipe Skull">
+                <p>Equipe Skull</p>
             </div>
         </div>   
-    </section>
-    <footer></footer> 
+    </div>
+    <footer>
+        <div class="footer_left">
+            <h2>Mais informações</h2>
+            <a href="mailto:atendimento@elitedos4.com?subject=E-mail%20do%20site&body=Prezados,%0D%0ASegue%20a%20dúvida.%0D%0AAtenciosamente,%0D%0A" aria-label="enviar e-mail para elite dos 4">atendimento@elitedos4.com.br</a>
+        </div>
+        <figure>
+            <img src="./src/assets/images/logo/elite4.gif" alt="logo da elite dos 4">
+        </figure>
+        <div class="footer_right">
+            <div class="whereat">
+                <h2>Onde estamos</h2>
+                <p>Planalto Indigo, Kanto <br>
+                Cidade Ever Grande, Hoenn <br>
+                Monte Lanakila, Alola <br>
+                Liga Pokémon, Sinnoh <br>
+                Liga Pokémon, Unova <br>
+                Liga Pokémon, Kalos <br>
+                </p>
+            </div>
+            <div class="footer_right_copyright">
+                <p id="copyright">Gama Academy, #2 Hiring Coders. By <a href="https://github.com/vitia-fritelle" targe="_blank" aria-label="acessar o GitHub do auto da página">Vitor Jr</a>.</p>
+            </div>
+        </div>
+    </footer> 
+    <script src="./src/service/pokemon_cry.js"></script>
+    <script src="./src/service/background-email.js"></script>
+    <script src="./src/service/storage.js"></script>
 </body>
 </html>

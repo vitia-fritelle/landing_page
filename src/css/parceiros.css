@@ -6,8 +6,7 @@
 }
 
 #parceiros h1{
-    height:33%;
-    width:100%;
+    margin:20px 10px;
 }
 
 #parceiros div{
@@ -17,6 +16,7 @@
     width:100%;
 }
 #parceiros div div{
+    border-radius: 10px;
     border: 1px solid #000000;
     height: 150px;
     width: 110px;
@@ -27,15 +27,17 @@
     margin: 1% 2%;
 }
 
-.parceiros div div div img{
-    width:100%;
-    height:66%;
+.emblema{
+    width:auto;
+    height:62px;
     display:flex;
     align-items: center;
     justify-content: center;
+    opacity: 0.5;
+    transition: 0.5s;
 }
-.parceiros div div div text{
-    height:33%;
-    display:flex;
-    justify-content: center;
+
+.emblema:hover{
+    opacity: 1;
+
 }

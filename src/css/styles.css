@@ -14,3 +14,8 @@ body{
 a{
     text-decoration: none;
 }
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}

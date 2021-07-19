@@ -16,22 +16,6 @@
     justify-content: center;
     width:100%;
 }
-
-
-.depoimentos_block1 img{
-    width:100px;
-    height:150px;
-}
-.depoimentos_block1 div{
-    height:30%;
-    width:80%;
-}
-
-.depoimentos_block1 div p{
-    margin-left:40px;
-}
-
-
 .depoimentos_block2{
     height:150px;
     display:flex;
@@ -40,58 +24,60 @@
     width:100%;
     flex-direction:row-reverse;
 }
-
-.depoimentos_block2 img{
+.imagem_depoente{
     width:100px;
     height:150px;
 }
-.depoimentos_block2 div{
-    height:30%;
+.avaliacao_comentario{
+    height:150px;
     width:80%;
 }
-
-.depoimentos_block2 div p{
+.icone-esquerda{
     margin-left:40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.icone-direita{
+    margin-right:40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.avaliacao_comentario span img{
+    height: 40px;
+    width: 40px;
 }
 
 @media (max-width:700px){
-    #depoimentos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width:100%;
-    }
-    .depoimentos_block1 img{
+    .imagem_depoente{
         width:100px;
         height:150px;
     }
-
-    .depoimentos_block1 div{
+    .avaliacao_comentario{
+        height:auto;
         width:100%;
     }
-
-    .depoimentos_block2 img{
-        width:100px;
-        height:150px;
-    }
-
-    .depoimentos_block2 div{
-        width:100%;
-    }
-
     .depoimentos_block1{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        height:auto;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
         width:100%;
-        flex-direction:row-reverse;
     }
-
     .depoimentos_block2{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        height:auto;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
         width:100%;
-        flex-direction:row-reverse;
+    }
+    .icone-direita{
+        margin-right: 0;
+        justify-content: center;
+    }
+    .icone-esquerda{
+        margin-left: 0;
+        justify-content: center;
     }
 }
