@@ -1,0 +1,16 @@
+html {
+    width:100vw;
+    height:100vh;
+   /* overflow-x: hidden;*/
+}
+body{
+    margin:0;
+    font-family:'Source Sans Pro', sans-serif;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}

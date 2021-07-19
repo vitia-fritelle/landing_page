@@ -1,0 +1,12 @@
+#apresentacao{
+    background-color: #000000;
+    height:auto;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#apresentacao img{
+    height:300px;
+    width:300px;
+}

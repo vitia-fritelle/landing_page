@@ -1,0 +1,38 @@
+#descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:300px;
+    font-weight: 800;
+}
+
+#descricao div{
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height:16.66%;
+    display: flex;
+    justify-content: center;
+}
+
+.descricao_text1{
+    background-image: url(../assets/images/background/descricao1.jpeg);
+}
+.descricao_text2{
+    background-image: url(../assets/images/background/descricao2.jpeg);
+}
+.descricao_text3{
+    background-image: url(../assets/images/background/descricao3.jpeg);
+}
+.descricao_text4{
+    background-image: url(../assets/images/background/descricao4.jpeg);
+}
+.descricao_text5{
+    background-image: url(../assets/images/background/descricao5.jpeg);
+}
+.descricao_text6{
+    background-image: url(../assets/images/background/descricao6.jpeg);
+}
+

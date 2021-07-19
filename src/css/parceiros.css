@@ -1,0 +1,41 @@
+#parceiros{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#parceiros h1{
+    height:33%;
+    width:100%;
+}
+
+#parceiros div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%;
+}
+#parceiros div div{
+    border: 1px solid #000000;
+    height: 150px;
+    width: 110px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1% 2%;
+}
+
+.parceiros div div div img{
+    width:100%;
+    height:66%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.parceiros div div div text{
+    height:33%;
+    display:flex;
+    justify-content: center;
+}
