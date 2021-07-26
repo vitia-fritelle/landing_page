@@ -29,6 +29,7 @@
 @media (max-width:426px){
     #email_text_background{
         padding-bottom: 5%;
+        padding-top: 5%;
     }
 }
 
