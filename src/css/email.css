@@ -3,13 +3,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-image: url(../assets/images/background/fundo_email.gif);
     margin:10px 0;
 }
-#email div input{
+
+#email_text_background{
+    background-color: #000000;
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding:0 1%;
+    height:100%;
+}
+#email_text_background div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:426px){
+    #email_text_background{
+        padding-bottom: 5%;
+    }
+}
+
+#email input{
     border-radius: 10px;
 }
 
-#email div button{
+#email button{
     border-radius: 10px;
 }

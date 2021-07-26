@@ -5,7 +5,7 @@ pokes.forEach(pokemon=>{
     cry = (document.getElementsByClassName(pokemon))[0];
     img = (document.getElementsByClassName(pokemon))[1];
     cry.volume=0.05;
-    img.addEventListener("mouseenter", function(){ 
+    img.addEventListener("mouseenter", ()=>{ 
         cry.play();
     })
 })

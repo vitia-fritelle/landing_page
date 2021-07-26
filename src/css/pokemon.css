@@ -8,7 +8,15 @@
 }
 .side_images{
     width:136px;
+    
 }
+.shadows_left{
+    box-shadow: 10px 10px 5px grey;
+}
+.shadows_right{
+    box-shadow: -10px 10px 5px grey;
+}
+
 #pokemon div{
     display:flex;
     flex-wrap: nowrap;
