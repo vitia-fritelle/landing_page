@@ -6,8 +6,6 @@
 }
 
 #descricao div{
-    background-repeat: no-repeat;
-    background-size:cover;
     width:100%;
     height:40px;
     display: flex;
@@ -18,27 +16,33 @@
 
 
 .descricao_text1{
-    background-image: url(../assets/images/background/descricao1.jpeg);
+    background-image: linear-gradient(#000000, #2b2b2b);
+    color:#ffffff;
     transition:0.5s;
 }
 .descricao_text2{
-    background-image: url(../assets/images/background/descricao2.jpeg);
+    background-image: linear-gradient(#2b2b2b, #555555);
+    color:#ffffff;
     transition:0.5s;
 }
 .descricao_text3{
-    background-image: url(../assets/images/background/descricao3.jpeg);
+    background-image: linear-gradient(#555555, #808080);
+    color:#ffffff;
     transition:0.5s;
 }
 .descricao_text4{
-    background-image: url(../assets/images/background/descricao4.jpeg);
+    background-image: linear-gradient(#808080, #aaaaaa);
+    color:#000000;
     transition:0.5s;
 }
 .descricao_text5{
-    background-image: url(../assets/images/background/descricao5.jpeg);
+    background-image: linear-gradient(#aaaaaa, #d5d5d5);
+    color:#000000;
     transition:0.5s;
 }
 .descricao_text6{
-    background-image: url(../assets/images/background/descricao6.jpeg);
+    background-image: linear-gradient(#d5d5d5, #ffffff);    
+    color:#000000;
     transition:0.5s;
 }
 
@@ -46,22 +50,4 @@
     height:300px;
 }
 
-.descricao_text1:hover{
-    background-image: url(../assets/images/background/descricao11.jpeg);
-}
-.descricao_text2:hover{
-    background-image: url(../assets/images/background/descricao22.jpeg);
-}
-.descricao_text3:hover{
-    background-image: url(../assets/images/background/descricao33.jpeg);
-}
-.descricao_text4:hover{
-    background-image: url(../assets/images/background/descricao44.jpeg);
-}
-.descricao_text5:hover{
-    background-image: url(../assets/images/background/descricao55.jpeg);
-}
-.descricao_text6:hover{
-    background-image: url(../assets/images/background/descricao66.jpeg);
-}
 
